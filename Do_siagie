@@ -95,11 +95,23 @@ gen num_secc=1
 
 collapse (firstnm) id_anio ubigeo cod_dre nom_dre cod_ugel nom_ugel departamento provincia distrito centro_poblado estadoescale gestion (sum) cant* num_secc , by(codlocal cod_mod anexo nivel_servicio)
 
-* Creacion de variables
-asdasdas
-das
-
-
+label var id_anio "año"
+label var ubigeo "ubigeo"
+label var cod_dre "codigo dre"
+label var nom_dre "nombre DRE"
+label var cod_ugel "codigo ugel"
+label var nom_ugel "nombre UGEL"
+label var departamento "departamento"
+label var provincia "provincia"
+label var distrito "distrito"
+label var centro_poblado "centro poblado"
+label var codlocal "codigo local"
+label var cod_mod "codigo modular"
+label var anexo "anexo"
+label var estadoescale "estado escale"
+label var num_secc "número de secciones"
+label var nivel_servicio "nivel de servicio"
+save "$siagie2020\Siagie_`y'_temp.dta", replace
 }
 
 *=========================
